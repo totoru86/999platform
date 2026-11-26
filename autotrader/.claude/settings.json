@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m trader check)",
+      "Bash(python -m trader balance)",
+      "Bash(python -m trader index)",
+      "Bash(python -m trader quote:*)",
+      "Bash(python -m trader rank:*)",
+      "Bash(python -m trader screen)",
+      "Bash(python -m trader daily:*)",
+      "Bash(python -m trader news:*)",
+      "Bash(python -m trader report:*)",
+      "Bash(python -m trader watchlist:*)",
+      "Bash(python -m pytest:*)",
+      "Write(./data/watchlist/**)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "ask": [
+      "Bash(python -m trader run:*)",
+      "Bash(python -m trader stop)",
+      "Bash(python -m trader resume)",
+      "Edit(./config.yaml)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Bash(cat .env:*)",
+      "Bash(type .env:*)",
+      "Bash(python -m trader run --live:*)"
+    ]
+  }
+}

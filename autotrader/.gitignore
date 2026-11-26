@@ -1,0 +1,9 @@
+# 비밀정보 — 절대 커밋 금지
+.env
+config.yaml
+# 런타임 데이터 (토큰 캐시, 매매일지 DB, 로그, 분봉 수집본, 관심종목)
+data/*
+!data/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/
